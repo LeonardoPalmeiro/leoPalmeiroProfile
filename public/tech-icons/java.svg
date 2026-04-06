@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="javaGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f89820"/>
+      <stop offset="100%" stop-color="#c5000b"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="#fff"/>
+  <path d="M40 80c0 17.67 19.43 32 44 32s44-14.33 44-32H40z" fill="#2d2d2d" opacity=".16"/>
+  <path d="M54 48c0 4.42-2.24 8-5 8s-5-3.58-5-8 2.24-8 5-8 5 3.58 5 8z" fill="url(#javaGradient)"/>
+  <path d="M64 48c0 12.15-19.39 20-19.39 20C56.87 74.58 74 72 74 56s-10-8-10-8z" fill="url(#javaGradient)"/>
+  <path d="M78 48c0 12.15-19.39 20-19.39 20C70.87 74.58 88 72 88 56s-10-8-10-8z" fill="url(#javaGradient)"/>
+  <path d="M52 84h28c0 9.94-12.12 18-26 18s-26-8.06-26-18h24z" fill="#2d2d2d" opacity=".12"/>
+  <path d="M66 24c0 0-14 4-14 14s10 14 14 14 14-4 14-14-14-14-14-14zm-4 10c0 0 0-4 4-4s4 4 4 4-4 4-4 4-4-4-4-4z" fill="url(#javaGradient)"/>
+  <path d="M48 86h32c4.42 0 8 3.58 8 8v2H40v-2c0-4.42 3.58-8 8-8z" fill="#b1232b" opacity=".4"/>
+</svg>

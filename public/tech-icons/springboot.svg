@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="springGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6db33f"/>
+      <stop offset="100%" stop-color="#2a6f24"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="#fff"/>
+  <circle cx="64" cy="68" r="35" fill="url(#springGrad)"/>
+  <path d="M64 92c-16.57 0-30-13.43-30-30s13.43-30 30-30 30 13.43 30 30-13.43 30-30 30zm0-56c-14.36 0-26 11.64-26 26s11.64 26 26 26 26-11.64 26-26-11.64-26-26-26z" fill="#fff"/>
+  <path d="M66 52c-4.42 0-8 3.58-8 8v28c0 4.42 3.58 8 8 8s8-3.58 8-8V60c0-4.42-3.58-8-8-8zm-12 28c0-6.63 5.37-12 12-12s12 5.37 12 12-5.37 12-12 12-12-5.37-12-12z" fill="#fff" opacity=".85"/>
+  <path d="M74 42c-8.84 0-16 7.16-16 16v4h12v-4c0-2.21 1.79-4 4-4s4 1.79 4 4v4h12v-4c0-8.84-7.16-16-16-16z" fill="#fff" opacity=".75"/>
+  <path d="M64 30c-10.48 0-19 8.52-19 19h6c0-7.18 5.82-13 13-13s13 5.82 13 13h6c0-10.48-8.52-19-19-19z" fill="#fff" opacity=".5"/>
+</svg>

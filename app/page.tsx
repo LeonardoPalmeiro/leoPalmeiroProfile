@@ -7,7 +7,9 @@ const technologies = [
   { name: 'React', icon: '/tech-icons/react.svg' },
   { name: 'Next.js', icon: '/tech-icons/nextjs.svg' },
   { name: 'TypeScript', icon: '/tech-icons/typescript.svg' },
+  { name: 'Java', icon: '/tech-icons/java.svg' },
   { name: 'Node.js', icon: '/tech-icons/nodejs.svg' },
+  { name: 'Spring Boot', icon: '/tech-icons/springboot.svg' },
   { name: 'GraphQL', icon: '/tech-icons/graphql.svg' },
   { name: 'Tailwind CSS', icon: '/tech-icons/tailwind.svg' },
   { name: 'Docker', icon: '/tech-icons/docker.svg' },
@@ -28,7 +30,7 @@ export default function Home() {
       <section className="hero-section">
         <div className="hero-copy">
           <p className="eyebrow">Hello, I am</p>
-          <h1>Leo Palmeiro</h1>
+          <h1>Leo</h1>
           <p className="hero-description">
             Fullstack Engineer building fast, elegant, and reliable web experiences.
           </p>
