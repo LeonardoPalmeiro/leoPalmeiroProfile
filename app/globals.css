@@ -211,6 +211,39 @@ h2 {
   color: #e5e7ff;
 }
 
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.education-card {
+  padding: 1.75rem 1.5rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.education-school {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #f8fbff;
+}
+
+.education-degree {
+  margin: 0.8rem 0 0;
+  color: #c8d0ff;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.education-dates {
+  margin: 1rem 0 0;
+  color: #98a8ff;
+  font-size: 0.9rem;
+}
+
 .contact-section {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -249,6 +282,53 @@ h2 {
 .form-status {
   color: #8cffb0;
   font-weight: 600;
+}
+
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  max-width: 40rem;
+}
+
+.contact-info-link {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.2rem 1.5rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #e5e7ff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-info-link:hover {
+  background: rgba(91, 124, 255, 0.15);
+  border-color: rgba(91, 124, 255, 0.6);
+  transform: translateX(4px);
+  box-shadow: 0 8px 24px rgba(91, 124, 255, 0.2);
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  color: #7c94ff;
+  transition: all 0.3s ease;
+}
+
+.contact-info-link:hover .contact-icon {
+  color: #8f6bff;
+  transform: scale(1.1);
+}
+
+.contact-text {
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 @media (max-width: 860px) {
