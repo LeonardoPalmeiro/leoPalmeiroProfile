@@ -359,3 +359,253 @@ h2 {
     align-items: stretch;
   }
 }
+
+.print-summary {
+  display: none;
+}
+
+.print-list {
+  list-style-type: disc;
+  margin: 0.5rem 0 0 1.25rem;
+  padding: 0;
+  color: #e5e7ff;
+}
+
+.print-list li {
+  margin-bottom: 0.45rem;
+  line-height: 1.6;
+}
+
+.print-contact-block {
+  margin-top: 1.5rem;
+}
+
+.print-contact-grid {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 0.75rem;
+}
+
+.print-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.print-contact-icon {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  fill: #000;
+  stroke: #000;
+}
+
+@media print {
+  .print-summary {
+    display: block;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #000;
+  }
+
+  .print-cover {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .print-profile-image {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+
+  .print-overview {
+    margin-top: 1rem;
+  }
+
+  .print-summary .eyebrow {
+    color: #000 !important;
+    margin-bottom: 0.5rem;
+  }
+
+  .print-summary h1 {
+    color: #000 !important;
+    font-size: 2.5rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .print-summary .hero-description {
+    color: #000 !important;
+    font-size: 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-section,
+  .print-contact-block,
+  .contact-section,
+  .tech-grid,
+  .education-grid,
+  .contact-form,
+  .hero-actions,
+  .photo-frame,
+  .button,
+  .hero-card,
+  .tech-card,
+  .education-card {
+    display: none !important;
+  }
+
+  .section-block {
+    padding: 0 !important;
+  }
+
+  .section-header {
+    display: none !important;
+  }
+
+  .contact-info-container {
+    display: block !important;
+    max-width: 100% !important;
+    margin-bottom: 1rem;
+  }
+
+  .contact-info-link {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    color: #000 !important;
+    text-decoration: underline;
+  }
+
+  .contact-info-link:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .contact-text {
+    color: #000 !important;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.95em;
+    color: #000;
+  }
+}
+
+@media print {
+  :root {
+    color-scheme: light;
+  }
+
+  * {
+    transition: none !important;
+    box-shadow: none !important;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    min-height: auto;
+  }
+
+  body {
+    background-image: none !important;
+  }
+
+  .page-shell {
+    width: auto !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tech-grid,
+  .education-grid,
+  .contact-info-container,
+  .contact-form {
+    display: block !important;
+    width: auto !important;
+  }
+
+  .hero-section,
+  .print-contact-block,
+  .contact-section {
+    display: none !important;
+  }
+
+  .hero-actions,
+  .button,
+  .contact-form,
+  .contact-info-link:hover,
+  .hero-card:hover,
+  .tech-card:hover {
+    display: none !important;
+  }
+
+  .photo-frame,
+  .tech-icon,
+  .contact-icon {
+    display: none !important;
+  }
+
+  .section-block {
+    padding: 0 !important;
+  }
+
+  .section-header {
+    margin-bottom: 0.75rem !important;
+  }
+
+  .eyebrow,
+  h1,
+  h2,
+  .education-school,
+  .education-degree,
+  .education-dates,
+  .contact-text {
+    color: #000 !important;
+  }
+
+  .section-header h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .education-card,
+  .contact-info-link {
+    border: 1px solid #000 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0.8rem 0 !important;
+  }
+
+  .education-card {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.95em;
+    color: #000;
+  }
+
+  h1,
+  h2,
+  p,
+  .education-degree,
+  .education-dates,
+  .contact-text {
+    orphans: 3;
+    widows: 3;
+  }
+
+  @page {
+    margin: 1.5cm;
+  }
+}
