@@ -254,6 +254,17 @@ h2 {
 @media (max-width: 860px) {
   .hero-section {
     grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .hero-copy {
+    order: 1;
+    text-align: center;
+  }
+
+  .photo-frame {
+    order: -1;
+    margin: 0 auto;
   }
 }
 
